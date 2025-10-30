@@ -1,0 +1,34 @@
+{
+  "name": "@odontox/db",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "./dist/src/index.js",
+  "types": "./dist/src/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/src/index.d.ts",
+      "import": "./dist/src/index.js",
+      "default": "./dist/src/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc -b",
+    "dev": "tsc -w -b",
+    "drizzle:generate": "drizzle-kit generate --config ./drizzle.config.ts",
+    "drizzle:push": "drizzle-kit push --config ./drizzle.config.ts",
+    "drizzle:studio": "drizzle-kit studio --config ./drizzle.config.ts",
+    "seed": "node dist/src/seed.js"
+  },
+  "dependencies": {
+    "@neondatabase/serverless": "0.10.4",
+    "argon2": "0.41.1",
+    "dotenv": "16.4.5",
+    "drizzle-orm": "0.44.7",
+    "zod": "3.23.8"
+  },
+  "devDependencies": {
+    "drizzle-kit": "0.31.6",
+    "typescript": "5.6.3"
+  }
+}

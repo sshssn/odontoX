@@ -1,0 +1,23 @@
+{
+  "name": "odontox-monorepo",
+  "private": true,
+  "version": "0.1.0",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "build": "npm -w packages/db run build && npm -w apps/web run build",
+    "dev": "npm -w apps/web run dev",
+    "lint": "npm -w apps/web run lint",
+    "typecheck": "npm -w apps/web run typecheck",
+    "db:generate": "npm -w packages/db run drizzle:generate",
+    "db:push": "npm -w packages/db run drizzle:push",
+    "db:studio": "npm -w packages/db run drizzle:studio",
+    "db:build": "npm -w packages/db run build",
+    "db:seed": "npm run db:build && npm -w packages/db run seed"
+  },
+  "devDependencies": {
+    "drizzle-orm": "^0.44.7"
+  }
+}
