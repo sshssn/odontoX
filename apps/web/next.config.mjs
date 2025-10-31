@@ -4,20 +4,6 @@ const nextConfig = {
   transpilePackages: ['@odontox/db'],
   experimental: {
     externalDir: true,
-    turbo: {
-      resolveExtensions: [
-        '.mdx',
-        '.tsx',
-        '.ts',
-        '.jsx',
-        '.js',
-        '.mjs',
-        '.json',
-      ],
-      resolveAlias: {
-        '@odontox/db': '../../packages/db/src/index.ts',
-      },
-    },
   },
 };
 
