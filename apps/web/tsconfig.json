@@ -21,6 +21,9 @@
     "paths": {
       "@/*": [
         "./src/*"
+      ],
+      "@odontox/db": [
+        "../../packages/db/src/index.ts"
       ]
     },
     "plugins": [

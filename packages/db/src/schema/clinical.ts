@@ -1,5 +1,5 @@
 import { pgTable, uuid, text, timestamp, date } from "drizzle-orm/pg-core";
-import { tenants } from "./tenancy.js";
+import { tenants } from "./tenancy";
 
 // Patients
 export const patients = pgTable("patients", {
