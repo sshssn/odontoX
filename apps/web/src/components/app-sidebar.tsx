@@ -169,43 +169,6 @@ const roleBasedNavigation: Record<AppRole, any> = {
       },
     ],
   },
-  BILLING: {
-    main: [
-      {
-        title: "Dashboard",
-        url: "/dashboard",
-        icon: LayoutDashboard,
-        isActive: true,
-      },
-      {
-        title: "Invoices",
-        url: "/invoices",
-        icon: FileText,
-      },
-      {
-        title: "Payments",
-        url: "/payments",
-        icon: CreditCard,
-      },
-      {
-        title: "Patients",
-        url: "/patients",
-        icon: Users,
-      },
-      {
-        title: "Reports",
-        url: "/reports",
-        icon: ClipboardList,
-      },
-    ],
-    secondary: [
-      {
-        title: "Settings",
-        url: "/settings",
-        icon: Settings2,
-      },
-    ],
-  },
   PATIENT: {
     main: [
       {

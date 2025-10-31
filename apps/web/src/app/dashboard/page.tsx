@@ -19,7 +19,6 @@ import { SuperAdminDashboard } from "@/components/dashboards/super-admin-dashboa
 import { OrgAdminDashboard } from "@/components/dashboards/org-admin-dashboard";
 import { DentistDashboard } from "@/components/dashboards/dentist-dashboard";
 import { ReceptionDashboard } from "@/components/dashboards/reception-dashboard";
-import { BillingDashboard } from "@/components/dashboards/billing-dashboard";
 import { PatientDashboard } from "@/components/dashboards/patient-dashboard";
 import type { AppRole } from "@/lib/rbac";
 
@@ -28,7 +27,6 @@ const dashboardTitles: Record<AppRole, string> = {
   ORG_ADMIN: "Organization Dashboard",
   DENTIST: "Provider Dashboard",
   RECEPTION: "Front Desk Dashboard",
-  BILLING: "Billing Dashboard",
   PATIENT: "Patient Portal",
 };
 
@@ -76,7 +74,6 @@ export default async function DashboardPage() {
         {role === "ORG_ADMIN" && <OrgAdminDashboard />}
         {role === "DENTIST" && <DentistDashboard />}
         {role === "RECEPTION" && <ReceptionDashboard />}
-        {role === "BILLING" && <BillingDashboard />}
         {role === "PATIENT" && <PatientDashboard />}
       </SidebarInset>
     </SidebarProvider>

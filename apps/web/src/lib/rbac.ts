@@ -3,7 +3,6 @@ export type AppRole =
   | "ORG_ADMIN"
   | "DENTIST"
   | "RECEPTION"
-  | "BILLING"
   | "PATIENT";
 
 export function roleHomePath(role: AppRole): string {
@@ -16,8 +15,6 @@ export function roleHomePath(role: AppRole): string {
       return "/provider";
     case "RECEPTION":
       return "/scheduling";
-    case "BILLING":
-      return "/billing";
     case "PATIENT":
       return "/portal";
     default:
